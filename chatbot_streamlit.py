@@ -24,7 +24,7 @@ def response(list, delay=0.05):
         yield chunk
         time.sleep(delay)
 
-st.title("Legendary Chat With The Whiz")
+st.title("Llama Chat")
 
 if "messages" not in st.session_state:
     st.session_state.client = OpenAI(
@@ -52,7 +52,7 @@ for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-if prompt := st.chat_input("Message McWhiz"):
+if prompt := st.chat_input("Message Llama"):
     st.session_state.messages.append({"role":"user","content":prompt})
 
     with st.chat_message("user"):
