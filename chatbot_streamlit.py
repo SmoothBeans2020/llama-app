@@ -25,8 +25,7 @@ def response(list, delay=0.05):
         time.sleep(delay)
 
 st.set_page_config(
-    page_title="McWhiz",
-    page_icon="wizard-hat.png"
+    page_title="Llama"
 )
 st.title("Llama Chat")
 
