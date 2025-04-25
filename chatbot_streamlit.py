@@ -24,6 +24,10 @@ def response(list, delay=0.05):
         yield chunk
         time.sleep(delay)
 
+st.set_page_config(
+    page_title="McWhiz",
+    page_icon="wizard-hat.png"
+)
 st.title("Llama Chat")
 
 if "messages" not in st.session_state:
